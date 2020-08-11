@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.smnadim21.api.Constants;
+
 import static com.smnadim21.api.BdApps.checkSubStatus;
 import static com.smnadim21.api.Subscription.getSubCode;
 
@@ -17,6 +19,8 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Constants.MSG_TEXT = "start whatever!";
 
         checkSubStatus(getSubCode());
 
