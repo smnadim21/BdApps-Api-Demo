@@ -21,6 +21,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.smnadim21.api.BdApps;
 import com.smnadim21.satouism.CatItem;
 import com.smnadim21.satouism.ItemActivity;
 import com.smnadim21.satouism.R;
@@ -87,7 +88,7 @@ public class TopicsAdapter extends RecyclerView.Adapter<TopicsAdapter.MyViewHold
 
 
                 if (getSubscriptionStatus()) {
-                    showDialog((Activity) context);
+                    BdApps.showDialog((Activity) context);
                 } else {
                     context.startActivity(new Intent(context, ItemActivity.class)
                             .putExtra("title", mDataset.get(holder.getAdapterPosition()).getTitle())

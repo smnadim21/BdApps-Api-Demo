@@ -35,7 +35,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 
     //bdapps library
-    implementation 'com.github.smnadim21:bdapps:0.0.1'
+    implementation 'com.github.smnadim21:bdapps:0.0.2'
 
     //network library
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
